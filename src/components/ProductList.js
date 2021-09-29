@@ -12,8 +12,9 @@ const ProductList = () => {
 
    
     return (
-        <div>
-            <h1>Real-Estate</h1>
+        <div className="page padding-right-left">
+            <h1 className="page-heading">Real-Estate</h1>
+            <div className="product-page">
             {
                 items.map((item,index)=>{
                     return (
@@ -24,6 +25,7 @@ const ProductList = () => {
                     )
                 })
             }
+            </div>
         </div>
     )
 }
